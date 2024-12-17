@@ -21,5 +21,5 @@ This project is based on a tutorial provided by Lighthouse Labs (https://www.lig
 The app has been deployed to Render and can be accessed here: https://chatbox-app-sample.onrender.com 
 
 ## Note
-This is a simple practice project created while learning and exploring Node.js and Socket.IO. It has basic chat functionality but can be improved further.
+This is a simple practice project created while learning and exploring Node.js and Socket.IO. It has basic chat functionalities but can be improved further.
 Suggestions and feedback are always welcome!
