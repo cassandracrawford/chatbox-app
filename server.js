@@ -14,6 +14,9 @@ app.use(express.static('client'));
 var io = require('socket.io')(server); // (server) passesthe HTTP server instance to Socket.IO to listen for WebSocket connections
 const list_msg = [];
 
+// dynamically assign a port or use port 8080 locally
+const PORT = process.env.PORT || 8080;
+
 io.on('connection', function (socket){
     // Send the existing messages to the new client
     socket.emit('message', list_msg);
@@ -25,6 +28,6 @@ io.on('connection', function (socket){
 });
 
 // starts server on port 8080 (commonly used for local development)
-server.listen(8080, function() {
+server.listen(PORT, function() {
     console.log('Chat server running');
 });
